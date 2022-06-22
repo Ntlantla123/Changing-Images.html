@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p><Strong>Changing Imange by clicking on it.</Strong></p>
+
+<img id="myImage" onclick="changeImage()" src="Island 1.jpg" width="250px" height="250px">
+
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("Island 2.jpg")) {
+    image.src = "Island 1.jpg";
+  } else {
+    image.src = "Island 2.jpg";
+  }
+}
+
+</script>
+</body>
+</html>
